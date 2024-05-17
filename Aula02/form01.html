@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 01</title>
+  </head>
+  <body>
+    <div id="titulo">
+      <h1>Cadastro de DEVs</h1>
+      <p>Complete com suas informações!</p>
+    </div>
+    <!-- Incluir nosso Formulário - Entrada de dados no front-end-->
+    <form >
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome completo."
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="e-mail válido."
+            required
+          />
+        </div>
+
+        </div>
+        <div class="campo">
+          <label for="whatapp">Whatapp:</label>
+          <input
+            type="text"
+            name="whatapp"
+            id="whatapp"
+            placeholder="(62) 99999-99999."
+          />
+        </div>
+       <div class="campo">
+            <label for="devtipo">Qual lado de aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devtipo" value="frontend" checked>Front-end
+            </label>
+              <label>
+                <input type="radio" name="devtipo" value="backend" >Back-end
+            </label>
+             <label>
+                <input type="radio" name="devtipo" value="fullstack" >Fullstack
+            </label>
+       </div>
+
+       <div class="campo">
+         <label for="experiencia">Qual sua experiência?</label>
+         <select id="experiencia" name="experiencia" required>
+            <option selected disabled value="">Selecione</option>
+            <option  value="Júnior">Júnior</option>
+            <option  value="Pleno">Pleno</option>
+             <option  value="Sênior">Sênior</option>
+         </select>
+       </div>
+      </fieldset>
+      <fieldset class="grupo">
+        <!-- Campo de Tecnologias-->
+        <div class="campo">
+            <label for="devtipo">Quais Tecnologias você domina?</label>
+            <input type="checkbox" id="tec1" name="tec1" value="HTML">
+            <label>HTML</label>
+            <input type="checkbox" id="tec2" name="tec2" value="CSS">
+            <label>CSS</label>
+            <input type="checkbox" id="tec3" name="tec3" value="JS">
+            <label>JavaScript</label>
+            <input type="checkbox" id="tec4" name="tec4" value="Java">
+            <label>Java</label>
+            <input type="checkbox" id="tec5" name="tec5" value="Python">
+            <label>Python</label>
+        </div>
+        <div class="campo">
+            <label for="curriculo">Míni-currículo: </label>
+            <textarea rows="6" name="curriculo" id="curriculo"></textarea>
+        </div>
+      </fieldset>
+      <button class="botao" type="submit">Cadastrar</button>
+      <button class="botao" type="reset">Limpar</button>
+    </form>
+  </body>
+</html>
