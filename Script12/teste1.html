@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Blog Pessoal</title>
+   </head> 
+   <body>
+      <header>   
+
+      </header>
+      <main>
+         <div class=”row">
+            <div class="post-text-box">
+
+            </div>
+            <div class=”profile”>
+
+            </div>  
+         </div>        
+      </main>
+      <footer>
+            
+      </footer>
+    </body>
+</html>

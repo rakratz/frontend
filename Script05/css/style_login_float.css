@@ -1,0 +1,85 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o menu lateral */
+.sidebar {
+    float: left;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o contêiner do formulário */
+.login-container {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+/* Estilos para o cabeçalho (header) */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilos para os campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão de login */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}

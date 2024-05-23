@@ -1,0 +1,21 @@
+
+
+ul {
+    list-style-type: disc;
+    list-style-image: url('marker.png');
+    list-style-position: inside;
+    list-style: disc url('marker.png') inside;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-image: url('marker.png');
+    list-style-position: inside;
+    list-style: disc url('marker.png') inside;
+}
+ul {
+    list-style-type: disc;
+    list-style-image: url('marker.png');
+    list-style-position: inside;
+    list-style: disc url('marker.png') inside;
+}

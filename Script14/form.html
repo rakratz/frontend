@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação de Formulário com JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Validação de Formulário com JavaScript</h1>
+
+    <form id="meuFormulario" onsubmit="return validarFormulario()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

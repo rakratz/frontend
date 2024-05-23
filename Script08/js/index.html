@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="~pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Cadastro de Produtos</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h2>Cadastro de Produto</h2>
+      <form>
+        <div class="produto">
+          <label for="nome">Nome Produto:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="nome">Preço do Produto:</label>
+          <input type="number" id="preco" name="preco" required />
+        </div>
+        <div class="form-group">
+          <label for="nome">Descrição:</label>
+          <textarea id="descricao" name="descricao" rows="5"></textarea>
+        </div>
+        <button type="submit" id="cadastrar" name="cadastrar" value="submit">
+          Cadastrar Produto
+        </button>
+      </form>
+    </main>
+    <footer>
+      <div class="parte1"><p>Contato</p></div>
+      <div class="parte2"><p>Rede Sociais</p></div>
+      <div class="parte3"><p>Termo de uso</p></div>
+    </footer>
+  </body>
+</html>

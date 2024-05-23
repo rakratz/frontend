@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Define o conjunto de caracteres UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Define a escala inicial da viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define o autor do documento -->
+    <meta name="author" content="Estilo Urbano" />
+    <!-- Define uma breve descrição do conteúdo do site -->
+    <meta
+      name="description"
+      content="Bem-vindo ao Estilo Urbano - sua loja online de moda urbana. Confira nossas últimas coleções e aproveite nossas promoções exclusivas."
+    />
+    <!-- Define palavras-chave relacionadas ao conteúdo do site -->
+    <meta
+      name="keywords"
+      content="moda urbana, roupas, acessórios, estilo, tendências"
+    />
+    <!-- Título da página exibido no navegador -->
+    <title>Estilo Urbano - Página Inicial</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Bem-vindo ao Estilo Urbano</h1>
+      <!-- Título principal da página -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <!-- Link para a página inicial -->
+          <li><a href="sobre.html">Sobre</a></li>
+          <!-- Link para a página "Sobre a Empresa" -->
+          <li><a href="login.html">Login</a></li>
+          <!-- Link para a login no site -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <section id="menu">
+          <nav>
+            <ul>
+              <h3>Menu</h3>
+              <li><a href="produtos.html">Produtos</a></li>
+              <!-- Link para a página de produtos -->
+              <li><a href="contatos.html">Contatos</a></li>
+              <!-- Link para a página de contatos -->
+              <li><a href="pedidos.html">Pedidos</a></li>
+              <!-- Link para a página de pedidos -->
+              <li><a href="cliente.html">Cadastro de Cliente</a></li>
+              <!-- Link para a página de cadastro de novo cliente -->
+            </ul>
+          </nav>
+        </section>
+      </aside>
+      <section id="cadastro">
+        <h2>Dados Pessoais</h2>
+        <form action="cadastro" method="post" enctype="multipart/form-data">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Digite seu nome"
+          />
+          <p>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Digite seu e-mail"
+            />
+          </p>
+          <p>
+            <label for="celular">Celular:</label>
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              required
+              placeholder="(xx) xxxxx-xxxx"
+            />
+          </p>
+          <p>
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="Masculino" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino" />
+            <label for="feminino">Feminino</label>
+          </p>
+          <p>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" /></p>
+          </p>
+          <p><label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF"></p>
+          <p><label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto"></p>
+          <p><label for="url_rede_social">URL de Rede Social:</label>
+        <input type="url" id="url_rede_social" name="url_rede_social" placeholder="http://"></p>
+          <p><label for="bio">Bio do Cliente:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Digite uma breve descrição sobre você"></textarea></p>
+          <p> <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required placeholder="Escolha um nome de usuário"></p>
+          <p><label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required></p>
+        <h2>Dados da Loja</h2>
+          <p><label for="como_conheceu">Como conheceu a loja:</label>
+        <select id="como_conheceu" name="como_conheceu">
+          <option value="amigos">Amigos</option>
+          <option value="internet">Internet</option>
+          <option value="propaganda">Propaganda</option>
+          <option value="outro">Outro</option>
+        </select></p>
+          <p><label>Itens de Interesse:</label>
+        <input type="checkbox" id="camisetas" name="itens_interesse" value="Camisetas">
+        <label for="camisetas">Camisetas</label>
+        <input type="checkbox" id="calcados" name="itens_interesse" value="Calçados">
+        <label for="calcados">Calçados</label>
+        <input type="checkbox" id="acessorios" name="itens_interesse" value="Acessórios">
+        <label for="acessorios">Acessórios</label></p>
+          <p><label for="cor_preferida">Cor Preferida:</label>
+        <input type="color" id="cor_preferida" name="cor_preferida"></p>
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Estilo Urbano. Todos os direitos reservados.</p>
+      <!-- Rodapé da página -->
+    </footer>
+  </body>
+</html>
