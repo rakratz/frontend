@@ -1,0 +1,157 @@
+/* Estilos globais para o corpo do documento e parágrafos */
+body,
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    /* tamanho da fonte */
+    font-style: italic;
+    /* estilo */
+    color: rgb(80, 78, 78);
+    /* cor do texto */
+    text-align: center;
+    /* alinhamento */
+}
+
+/* Estilos para a grade principal */
+.principal {
+    width: 80%;
+    /* largura da grade */
+    margin: 0 auto;
+    /* centralização horizontal */
+    display: grid;
+    /* exibe como uma grade */
+    grid-template-columns: 75% 25%;
+    /* duas colunas: 75% e 25% */
+    grid-template-rows: 100px 450px 150px;
+    /* três linhas com alturas definidas */
+    grid-template-areas: "cabecalho cabecalho"
+        "secao barra-lateral"
+        "rodape rodape";
+    /* áreas nomeadas */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    grid-area: cabecalho;
+    /* define a área da grade */
+    background-color: #48CFE0;
+    /* cor de fundo */
+}
+
+/* Estilos para a seção principal */
+section {
+    grid-area: secao;
+    /* define a área da grade */
+    background-color: #E05DA1;
+    /* cor de fundo */
+}
+
+/* Estilos para a barra lateral */
+aside {
+    grid-area: barra-lateral;
+    /* define a área da grade */
+    background-color: #E0D475;
+    /* cor de fundo */
+}
+
+/* Estilos para o rodapé */
+footer {
+    grid-area: rodape;
+    /* define a área da grade */
+    display: flex;
+    /* exibe como um flex container */
+    justify-content: space-evenly;
+    /* espaçamento uniforme dos itens */
+}
+
+/* Estilos para as partes do rodapé */
+.parte1,
+.parte2,
+.parte3 {
+    width: 25%;
+    /* largura */
+    background-color: #5de05e;
+    /* cor de fundo */
+}
+
+/* Estilos específicos para a parte 2 */
+.parte2 {
+    width: 50%;
+    /* largura */
+    margin: 0 2px;
+    /* margem */
+}
+
+/* Estilos específicos para a parte 3 */
+.parte3 {
+    margin: 0;
+    /* margem */
+}
+
+/* Media query para telas menores que 992px */
+@media(max-width: 992px) {
+
+    /* Altera o layout da grade principal */
+    .principal {
+        grid-template-columns: 100%;
+        /* uma coluna */
+        grid-template-areas: "cabecalho" "secao" "barra-lateral" "rodape";
+        /* áreas nomeadas */
+    }
+
+    /* Altera os estilos do rodapé */
+    footer {
+        display: flex;
+        /* exibe como um flex container */
+        flex-wrap: wrap;
+        /* permite que os itens quebrem para a próxima linha */
+        text-align: center;
+        /* alinhamento */
+    }
+
+    /* Altera os estilos das partes do rodapé */
+    .parte1,
+    .parte2,
+    .parte3 {
+        margin: 0;
+        /* margem */
+        border: solid 1px #fff;
+        /* borda */
+        width: 49%;
+        /* largura */
+    }
+
+    /* Altera os estilos específicos da parte 2 */
+    .parte2 {
+        width: 100%;
+        /* largura */
+        order: -1;
+        /* altera a ordem de exibição */
+    }
+
+    /* Media query para telas menores que 768px */
+    @media(max-width: 768px) {
+
+        /* Altera a margem do corpo do documento */
+        body {
+            margin: 0 15px;
+            /* margem */
+        }
+
+        /* Altera a largura da grade principal e das partes do rodapé */
+        .principal,
+        .parte1,
+        .parte2,
+        .parte3 {
+            width: 100%;
+            /* largura */
+        }
+
+        /* Restaura a ordem de exibição padrão da parte 2 */
+        .parte2 {
+            order: initial;
+            /* ordem inicial */
+        }
+    }
+}
