@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    /* Remove a margem externa de todos os lados dos elementos */
+    margin: 0;
+    /* Remove o espaçamento interno de todos os lados dos elementos */
+    padding: 0;
+    /* Inclui preenchimento e borda na largura e altura total do elemento */
+    box-sizing: border-box;
+    /* Define a família de fontes padrão */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #2e2e2e;
+    /* Altura mínimo do elemto - unidade de tamanh vh o vw */
+    min-height: 100vh;
+    /* Torna o elemento um Flex conteiner e todos seus filhos em flex itens*/
+    display: flex;
+    /* Alinha os elementos Flex no centro*/
+    align-items: center;
+    /* Alinha os itens flex no conteiner de acordo com a direção*/
+    justify-content: center;
+}
+
+
+form {
+    /* Cor de fundo do elemento*/
+    background-color: #fff;
+    /* Arrendnda os Cantos */
+    border-radius: 10px;
+    /* Largura máxima do elemento */
+    max-width: 500px;
+    /* Gera espaço ao redor do conteúdo do elemento 
+    50 px para os lados superior e inferior
+    40 px para esquerdo e direito*/
+    padding: 50px 40px;
+    /* adciona sobra nos elementos */
+    box-shadow: 5px 5px 15px;
+    /* definindo o alinhamento do texto nno cento */
+    text-align: center;
+    /* Cria um espaço entre os elementos */
+    margin: 48px 0;
+    /* Tamanho da fonte*/
+    font-size: 20px;
+    /* Cor do texto */ 
+    color: #111;
+}
+
+form h2 {
+    /* Espaçamentos */
+    padding: 40px;
+}
+.container{
+    /* Margim inferior */
+    margin-bottom: 12px;
+    /* */
+    position: relative;
+}
+
+.container input {
+    /* Define a largura do elemento*/
+    width: 100%;
+    /* Define a altura do elemento*/
+    height: 70px; 
+    /* Remove a borda*/
+    border: none;
+    /* Define a Cor de Fundo do elemento*/
+    background-color: #ededed;
+    /* Arendodar*/
+    border-radius: 4px;
+    /* Cor do elemento*/
+    color: #333;
+    /* Tamanho do texto*/
+    font-size: 18px;
+    /* Aumenta a largura do contorno do texto - bold*/
+    font-weight: 700;
+    /* Define espaço ao redor do conteúdo do elemento
+       (superir, direito, inferior e esquerdo)*/
+    padding: 14px 60px 0 10px;
+}
+
+label{
+    /* Texto do elemento em maísculo*/
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9d9d9d;
+    /* Posiciona em qualquer elemento de acordo com o elemento pai. Deixando de fazer parte do fluxo comum do documento e podendo ser colocado em qualquer lugar da tela*/
+    position: absolute;
+    line-height: 70px;
+    /* Distância do Topo*/
+    top: 0; 
+    /* Distância da Borda Esquerda*/
+    left: 20px;
+    /* Impede a selecao do texto*/
+    user-select: none;
+    /* Define se o elemento deve agira ou não ao ponteiro do mouse - nesse caso - não*/
+    pointer-events: none;
+    /* Transição de animação em 0.5s*/
+    transition: 0.5s;
+}
+
+/* ~ Quando ocorrer o foco do input (entrar) 
+altera a propriedade label*/
+.container input:focus ~ label,
+.container input:valid ~ label {
+    left: 10px;
+    top: -16px;
+    color: #00acd7;
+}
+button{
+    /* Elemento em bloco não permite outros elementos ao lado 
+       Exceto qiando existir a propriedade float */
+    display: block;
+    
+    width: 50%;
+    height: 70px;
+    margin: 40px auto;
+
+    background-color: #00acd7;
+    color: #fff;
+    font-size: 20px;
+
+    border-radius: 30px;
+
+    /* Mudar o ponteiro do mouse*/
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+button:hover{
+    opacity: 0.85;
+}
+
+form a {
+    /* Não permite que o elemento tenha a propriedade float aplicada n oelmento anterior*/
+    clear: both;
+    display: block;
+    text-align: center;
+    /* Remove o underline do link*/
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+form a:hover {
+ color: #111;   
+}
