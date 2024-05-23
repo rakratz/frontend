@@ -1,0 +1,77 @@
+/* CSS para telas grandes e pequenas */
+
+/* Estilos gerais para o corpo do documento */
+body {
+    background-color: black;
+    /* Define a cor de fundo do corpo como preto */
+    color: white;
+    /* Define a cor do texto como branco */
+    font-family: Arial, sans-serif;
+    /* Define a família de fontes para o corpo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #808080;
+    /* Define a cor de fundo do cabeçalho como cinza */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao cabeçalho */
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    display: inline;
+    /* Faz com que os itens da lista fiquem em linha */
+    margin-right: 10px;
+    /* Adiciona margem à direita entre os itens da lista */
+}
+
+/* Estilos para os links na lista de navegação */
+nav ul li a {
+    color: rgb(27, 27, 27);
+    /* Define a cor do texto dos links */
+    text-decoration: none;
+    /* Remove a decoração de sublinhado dos links */
+}
+
+/* Estilos para o menu */
+#menu {
+    background: #f2f2f2;
+    /* Define a cor de fundo do menu */
+    /* Altere para a cor ou imagem de fundo desejada */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    background-color: rgb(233, 230, 230);
+    /* Define a cor de fundo do conteúdo principal */
+    color: black;
+    /* Define a cor do texto como preto */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao conteúdo principal */
+}
+
+/* Estilos específicos para telas pequenas */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+        /* Altera o tamanho da fonte para telas pequenas */
+    }
+
+    nav ul li {
+        display: block;
+        /* Faz com que os itens da lista fiquem em bloco */
+        margin-bottom: 10px;
+        /* Adiciona margem inferior entre os itens da lista */
+        text-align: center;
+        /* Centraliza o texto dos itens da lista */
+    }
+}
