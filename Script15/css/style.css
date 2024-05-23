@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente ao centro */
+    height: 50vh;
+    /* Define a altura do elemento principal como 50% da altura da viewport */
+    background-color: #f0f0f0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.left-column {
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha o conteúdo à direita */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Adiciona margens horizontais aos links do rodapé */
+}
