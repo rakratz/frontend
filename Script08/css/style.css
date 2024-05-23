@@ -1,0 +1,96 @@
+/* Estilos gerais */
+body {
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    font-family: Arial, sans-serif;/* Define a família de fontes para o corpo */
+}
+/* Estilos para o header */
+header {
+    background-color: #48CFE0; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+/* Estilos para a navegação dentro do cabeçalho */
+header nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+}
+
+header nav ul li {
+    display: inline; /* Faz com que os itens da lista fiquem em linha */
+    margin-right: 20px; /* Adiciona margem à direita entre os itens da lista */
+}
+
+/* Estilos para o aside */
+aside {
+    background-color: #E0D475; /* Define a cor de fundo do aside */
+    width: 20%; 
+    padding: 5px; 
+    float: left; 
+    box-sizing: border-box;
+    height: 256px;
+    box-sizing: border-box;
+}
+
+/* Estilos para a navegação dentro do aside */
+aside nav ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+}
+
+aside nav ul li {
+    margin-right: 10px;
+    /* Adiciona margem à direita entre os itens da lista */
+}
+
+/* Estilos para o main */
+main {
+    background-color: #E05DA1;
+    /* Define a cor de fundo do main */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao main */
+    overflow: hidden;
+    /* Limpa a flutuação */
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #48CFE0;
+    /* Define a cor de fundo do footer */
+    padding: 10px;
+    /* Adiciona espaçamento interno ao footer */
+    display: flex;
+    /* Usa flexbox */
+    flex-wrap: wrap;
+    /* Permite que os elementos do footer sejam quebrados em várias linhas */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+    gap: 20px;
+    /* Define o espaçamento entre os elementos do footer */
+}
+
+/* Estilos específicos para smartphones */
+@media screen and (max-width: 576px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header,
+    aside,
+    main,
+    footer {
+        width: 100%;
+        /* Define a largura total para os elementos */
+    }
+
+    aside {
+        height: 100px;
+        /* Define a altura do aside */
+        text-align: center;
+        /* Centraliza o texto dentro do aside */
+        order: 2;
+        /* Define a ordem de exibição */
+    }
+}
