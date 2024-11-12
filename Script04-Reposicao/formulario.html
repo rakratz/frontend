@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Desenvolvedor</title>
+    <!-- Link com folha de estilo-->
+     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- Início do Formulário -->
+    <form action="" method="post">
+        <!-- Nome Completo --> 
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome" name="nome" required placeholder="Nome Completo">
+
+        <!-- email-->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Nível de Experiência -->
+        <label>Nível de Experiência: </label>
+        <input type="radio" id="junior" name="experiencia" value="Júnior" checked> Júnior
+        <input type="radio" id="pleno" name="experiencia" value="Pleno"> Pleno
+        <input type="radio" id="senior" name="experiencia" value="Sênior"> Sênior
+
+        <!-- Área de Especialização -->
+         <label>Área de Especialização: </label>
+         <input type="checkbox" id="frontend" name="especializacao" value="ForntEnd"> FrontEnd<br/>
+         <input type="checkbox" id="backend" name="especializacao" value="BackEnd"> BackEnd<br/>
+         <input type="checkbox" id="fullstack" name="especializacao" value="Fullstack"> Fullstack<br/>
+         <input type="checkbox" id="mobile" name="especializacao" value="Mobile"> Mobile
+         <!-- Tempo de Experiência -->
+          <label for="tempo">Tempo de Experiência (0 anos e 30 anos): </label>
+          <input type="range" id="tempo" name="tempo" min="0" max="30">
+
+          <!-- Linguagem Principal -->
+           <label for="principal">Linguagem Principal</label>
+           <select id="principal" name="principal" required>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Outro">Outro</option>
+           </select>
+
+           <!-- Disponibilidade de Horas Semanais-->
+            <label for="disponibilidade">Disponibilidade de Horas Semanais: </label>
+            <input type="number" id="horas" name="horas" min="1" max="44" required>
+
+            <!--Cor preferida -->
+            <label for="cor">Cor preferida: </label>
+            <input type="color" id="cor" name="cor">
+
+            <!-- Data Nascimento -->
+             <label for="dataNasc">Data Nascimento: </label>
+             <input type="date" id="dataNasc" name="dataNasc" max="2011-01-01" required>
+
+             <!-- Botão de submit-->
+              <label for="acao">Ação</label>
+              <button type="submit">Cadastrar</button>
+              <button type="reset">Limpar</button>
+    </form>
+    <!-- Fim do Formulário -->
+    
+</body>
+</html>
