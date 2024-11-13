@@ -1,0 +1,200 @@
+/* Reset básico para remover margem e padding e garantir que o box-sizing seja 'border-box' */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    /* Define a fonte padrão */
+}
+
+/* Estilização do corpo da página */
+body {
+    width: 100%;
+    height: 100vh;
+    /* Define a altura da viewport */
+    background-color: #1a1a1a;
+    /* Cor de fundo */
+}
+
+/* Estilização do cabeçalho */
+header {
+    width: 100%;
+    /* Ocupa toda a largura da tela */
+    height: 70px;
+    /* Altura fixa para o cabeçalho */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #101010;
+    /* Cor de fundo */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;
+    /* Espaça itens entre as extremidades */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite que itens "quebrem" para novas linhas */
+}
+
+/* Estilização de listas gerais */
+ul {
+    list-style: none;
+    /* Remove marcadores de lista padrão */
+    display: flex;
+    /* Layout de flexbox */
+    flex-wrap: wrap;
+    /* Permite quebra de linha se necessário */
+    box-shadow: 0px 5px 20px #000000;
+    /* Sombra abaixo dos itens */
+}
+
+/* Estilização específica para o menu */
+.menu {
+    list-style: none;
+    display: flex;
+    /* Alinha itens do menu em uma linha */
+}
+
+/* Estilo dos links no menu */
+.menu li a {
+    color: #ffffff;
+    /* Cor do texto */
+    display: block;
+    /* Transforma em bloco para ocupar largura total */
+    text-decoration: none;
+    /* Remove sublinhado */
+    margin-left: 10px;
+    /* Espaçamento à esquerda */
+    padding: 10px 20px;
+    /* Espaçamento interno nos links */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Estilo hover nos links do menu */
+.menu li a:hover {
+    background-color: #333333;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização do logotipo */
+.logoMarca {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    background-color: aquamarine;
+    /* Cor de fundo */
+}
+
+/* Estilização do conteúdo principal */
+main {
+    color: #ffffff;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-top: 10px;
+    /* Espaço acima */
+}
+
+/* Estilização da seção de imagens */
+section {
+    max-width: 1024px;
+    /* Largura máxima da seção */
+    margin: 0 auto;
+    /* Centraliza a seção */
+    display: flex;
+    /* Flexbox para disposição das imagens */
+    flex-wrap: wrap;
+    /* Permite quebra de linha para as imagens */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+}
+
+/* Estilo para as imagens na seção */
+section img {
+    width: 100%;
+    /* Largura da imagem ocupa 100% do contêiner */
+    height: 200px;
+    /* Altura fixa para uniformidade */
+    object-fit: cover;
+    /* Preenche o espaço sem distorção */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Estilização dos contêineres das imagens */
+section div {
+    flex: 1 1 250px;
+    /* Flex-grow, flex-shrink e tamanho base */
+    min-width: 200px;
+    /* Largura mínima */
+    max-width: 300px;
+    /* Largura máxima */
+    margin: 10px;
+    /* Margem ao redor do contêiner */
+    background-color: #252525;
+    /* Cor de fundo */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Esconde conteúdo que ultrapassa o limite */
+    display: flex;
+    /* Flexbox para alinhar imagem no centro */
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Alinha horizontalmente */
+}
+
+/* Estilização do rodapé */
+footer {
+    width: 100%;
+    /* Ocupa toda a largura */
+    height: 70px;
+    /* Altura fixa */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #101010;
+    /* Cor de fundo */
+    align-items: center;
+    /* Alinha itens verticalmente */
+    justify-content: center;
+    /* Centraliza itens horizontalmente */
+    display: flex;
+    /* Flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite quebra de linha */
+}
+
+/* Estilização para a lista de links no rodapé */
+.rodape {
+    list-style: none;
+    /* Remove marcadores */
+    display: flex;
+    /* Layout flexbox */
+}
+
+/* Estilização dos links no rodapé */
+.rodape li a {
+    color: #ffffff;
+    /* Cor do texto */
+    display: block;
+    /* Bloco para ocupar largura total */
+    text-decoration: none;
+    /* Remove sublinhado */
+    margin-left: 10px;
+    /* Espaçamento à esquerda */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Efeito hover nos links do rodapé */
+.rodape li a:hover {
+    background-color: #333333;
+    /* Cor de fundo ao passar o mouse */
+}
