@@ -1,0 +1,232 @@
+/* Reset básico */
+* {
+    margin: 0;
+    /* Remove a margem padrão de todos os elementos */
+    padding: 0;
+    /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box;
+    /* Inclui bordas e preenchimentos nas larguras e alturas dos elementos */
+    font-family: 'Courier New', Courier, monospace;
+    /* Define a fonte padrão */
+}
+
+body {
+    display: flex;
+    /* Define o layout do corpo como flex */
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+    min-height: 100vh;
+    /* Faz o body ocupar pelo menos a altura total da tela */
+    background-color: #f4f4f9;
+    /* Define uma cor de fundo para o body */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    /* Fundo escuro para o cabeçalho */
+    color: #fff;
+    /* Texto branco no cabeçalho */
+    padding: 20px;
+    /* Espaçamento interno do cabeçalho */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #444;
+    /* Fundo para a barra de navegação */
+    padding: 10px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+nav ul {
+    list-style: none;
+    /* Remove marcadores da lista */
+    display: flex;
+    /* Exibe os itens da lista em linha */
+    justify-content: center;
+    /* Centraliza os itens da lista horizontalmente */
+    gap: 15px;
+    /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: #fff;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    padding: 8px 15px;
+    /* Espaçamento interno dos links */
+    border-radius: 5px;
+    /* Bordas arredondadas nos links */
+    transition: background 0.3s;
+    /* Suaviza a transição de fundo ao passar o mouse */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    /* Muda o fundo do link ao passar o mouse */
+}
+
+/* Layout principal */
+main {
+    display: flex;
+    /* Exibe o layout principal em flex */
+    flex: 1;
+    /* Faz o main crescer para ocupar o espaço restante */
+    padding: 20px;
+    /* Espaçamento interno */
+    gap: 20px;
+    /* Espaçamento entre os elementos filhos */
+}
+
+/* Menu lateral esquerda */
+aside {
+    background-color: #eee;
+    /* Fundo claro para o menu lateral */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    width: 200px;
+    /* Largura fixa para o menu lateral */
+}
+
+aside h2 {
+    margin-bottom: 15px;
+    /* Espaço abaixo do título do aside */
+}
+
+aside ul {
+    list-style: none;
+    /* Remove marcadores da lista */
+}
+
+aside ul li {
+    margin-bottom: 10px;
+    /* Espaço entre os itens do menu */
+}
+
+aside ul li button {
+    width: 100%;
+    /* Botões ocupam 100% da largura do aside */
+    padding: 10px;
+    /* Espaçamento interno dos botões */
+    background-color: #666;
+    /* Fundo dos botões */
+    color: #fff;
+    /* Cor do texto dos botões */
+    border: none;
+    /* Remove a borda padrão dos botões */
+    border-radius: 5px;
+    /* Bordas arredondadas nos botões */
+    cursor: pointer;
+    /* Cursor de ponteiro ao passar o mouse */
+    transition: background 0.3s;
+    /* Suaviza a transição de fundo ao passar o mouse */
+}
+
+aside ul li button:hover {
+    background-color: #555;
+    /* Muda o fundo do botão ao passar o mouse */
+}
+
+/* Seção do formulário */
+section {
+    background-color: #fff;
+    /* Fundo branco para a seção do formulário */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    flex: 1;
+    /* Faz a seção do formulário crescer para ocupar o espaço restante */
+    max-width: 100%;  /* ou podria usar max-width: 600px;*/
+    /* Largura máxima para o formulário */
+}
+
+section h2 {
+    margin-bottom: 15px;
+    /* Espaço abaixo do título da seção */
+}
+
+form label {
+    display: block;
+    /* Exibe os rótulos em bloco */
+    margin-bottom: 5px;
+    /* Espaço abaixo do rótulo */
+    font-weight: bold;
+    /* Define o texto em negrito */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    /* Faz os campos ocuparem 100% da largura da seção */
+    padding: 10px;
+    /* Espaçamento interno dos campos */
+    margin-bottom: 15px;
+    /* Espaço abaixo de cada campo */
+    border: 1px solid #ddd;
+    /* Borda leve ao redor dos campos */
+    border-radius: 5px;
+    /* Bordas arredondadas nos campos */
+}
+
+form button {
+    padding: 10px 20px;
+    /* Espaçamento interno do botão de envio */
+    background-color: #333;
+    /* Fundo escuro do botão de envio */
+    color: #fff;
+    /* Cor do texto no botão */
+    border: none;
+    /* Remove borda do botão */
+    border-radius: 5px;
+    /* Bordas arredondadas no botão */
+    cursor: pointer;
+    /* Cursor de ponteiro ao passar o mouse */
+    transition: background 0.3s;
+    /* Suaviza a transição de fundo ao passar o mouse */
+}
+
+form button:hover {
+    background-color: #444;
+    /* Muda o fundo do botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    /* Fundo escuro para o rodapé */
+    color: #fff;
+    /* Cor do texto do rodapé */
+    padding: 10px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /* Altera o layout principal para coluna */
+        align-items: center;
+        /* Centraliza o conteúdo no eixo horizontal */
+    }
+
+    aside {
+        width: 100%;
+        /* Define a largura do aside para 100% em telas menores */
+    }
+
+    section {
+        width: 100%;
+        /* Define a largura da seção para 100% em telas menores */
+    }
+}
