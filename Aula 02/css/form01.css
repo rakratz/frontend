@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TAGS sóc coloca o nome da tag */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+/* id nos colocamos #nomeID */
+#titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #023604;
+}
+form {
+    /* Largura máxima */
+    max-width: 600px;
+    /* Centraliza o formulário horizontalmente */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    /* Borda arredondada */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+
+}
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+/* Class nos colocamos .nomeClass */
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #023604;
+}
+
+.botao {
+    background-color: #023604;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #45A049;
+}
+.radio, .check {
+    display: inline-block;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,81 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte da página */
+  background-color: #f0f4f8;      /* Cor de fundo suave */
+  padding: 20px;                  /* Espaçamento interno da página */
+  justify-content: center;        /* Centraliza o formulário na horizontal */
+}
+
+/* Caixa do formulário */
+form {
+  background-color: #ffffff;      /* Fundo branco para o formulário */
+  padding: 30px;                  /* Espaço interno */
+  border-radius: 10px;            /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 400px;               /* Limita largura para manter legibilidade */
+  margin: 0 auto;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #023604;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #333333;                 /* Cor do texto escuro */
+  margin-bottom: 20px;
+}
+
+/* Rótulos dos campos */
+label {
+  display: block;                 /* Garante que o rótulo fique em linha separada */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+}
+
+/* Campos de entrada de texto, número e e-mail */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;                    /* Ocupa toda a largura do container */
+  padding: 10px;                  /* Espaço interno */
+  margin-bottom: 15px;           /* Espaço entre os campos */
+  border: 1px solid #cccccc;     /* Borda cinza clara */
+  border-radius: 5px;            /* Bordas suavizadas */
+  box-sizing: border-box;        /* Inclui padding na largura */
+  font-size: 14px;
+}
+
+/* Campo de texto maior */
+textarea {
+  resize: vertical;              /* Permite redimensionar verticalmente */
+}
+
+/* Botão de envio */
+button {
+  background-color: #007bff;     /* Azul padrão */
+  color: white;                  /* Texto branco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;               /* Cursor de mãozinha ao passar o mouse */
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+button:hover {
+  background-color: #0056b3;     /* Azul mais escuro ao passar o mouse */
+}
+
+.radio, .check {
+    display: inline-block;
+    margin-right: 10px;
+}

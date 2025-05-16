@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário 01</title>
+  <!-- Link para o CSS -->
+  <link rel="stylesheet" href="css/form01.css">
+</head>
+<body>
+    <!-- id = identificador única de um tag -->
+    <div id="titulo">
+      <h1>Cadastro de Devs</h1>
+      <p>Complete com suas informações</p>
+    </div>
+    
+    <!-- Incluir nosso formulário no frontend -->
+     <form>
+        <!-- filedset forma que ser trata de um agrupamento de campos relacionados (dados pessoas, pagamento)-->
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required>
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="nome@email.com">
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="whatapp">Whatapp</label>
+              <input type="text" id="whatapp" name="whatapp" placeholder="(62) 99999-9999">
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="devtipo">Qual lado de aplicação você desenvolve?</label>
+                  <input type="radio" id="devtipo" name="devtipo" value="front" checked>
+                  <label class="radio" for="front" >Front-End</label>
+                  <input type="radio" id="devtipo" name="devtipo" value="back">
+                  <label class="radio" for="front">Back-End</label>
+                  <input type="radio" id="devtipo" name="devtipo" value="full">
+                  <label class="radio" for="front">Full-stack</label>
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="experiencia">Qual é sua experiência?</label>
+              <select id="experiencia" name="experiencia" required>
+                <option value="Júnior">Júnior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Sênior">Sênior</option>
+              </select>
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="devtipo">Quais Tecnologias você domina?</label>
+              <input type="checkbox" id="tec1" name="tec1" value="html">
+              <label class="check" for="tec1" >HTML</label>
+
+              <input type="checkbox" id="tec2" name="tec2" value="css">
+              <label class="check" for="tec2" >CSS</label>
+
+              <input type="checkbox" id="tec3" name="tec3" value="JS">
+              <label class="check" for="tec3" >JavaScript</label>
+
+              <input type="checkbox" id="tec4" name="tec4" value="Java">
+              <label class="check" for="tec4" >Java</label>
+
+              <input type="checkbox" id="tec5" name="tec5" value="Python">
+              <label class="check" for="tec5" >Python</label>
+            </div>
+        </filedset>
+
+        <filedset class="grupo">
+            <div class="campo">
+              <label for="curriculo">Míni-currículo</label>
+              <textarea id="curriculo" name="curriculo" rows="5" cols="33" placeholder="Escreva aqui um pouco sobre você..."></textarea>
+            </div>
+        </filedset>
+
+        <button class="botao" type="submit">Enviar</button>
+        <button class="botao" type="reset">Limpar</button>
+
+     </form>
+</body>
+</html>

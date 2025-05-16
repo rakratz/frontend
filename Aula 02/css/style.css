@@ -1,0 +1,46 @@
+/* Reset CSS
+   Todos os Elemento da Página */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Estilo do Body */
+body {
+    /* fammíla de fonte */
+    font-family: Arial, sans-serif;
+    /* cor de fundo */
+    background-color: #f0f0f0;
+}
+/* Estilo para h1 */
+h1 {
+    /* cor do texto */
+    color: #333;
+    /* centraliza o texto */
+    text-align: center;
+    /* espaçamento entre letras */
+    letter-spacing: 2px;
+}
+/* Estilo do p */
+p {
+    /* cor do texto */
+    color: #666;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+/* Estilo da a */
+a {
+    margin-left: 10px;
+    /* cor do texto */
+    color: #007BFF;
+    /* retirar sublinhado */
+    text-decoration: none;
+}
+
+div {
+    /* centraliza o texto */
+    text-align: center;
+    /* espaçamento entre letras */
+    letter-spacing: 2px;
+}
