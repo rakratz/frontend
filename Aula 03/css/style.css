@@ -1,0 +1,189 @@
+/* Resetar o HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+/* Estilização do cabeçalho */
+header {
+    width: 100%;
+    /* Ocupa toda a largura da tela */
+    height: 70px;
+    /* Altura fixa para o cabeçalho */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #101010;
+    /* Cor de fundo */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;
+    /* Espaça itens entre as extremidades */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite que itens "quebrem" para novas linhas */
+}
+ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite que itens "quebrem" para novas linhas */
+    gap: 20px;
+    /* Espaçamento entre os itens da lista */
+    box-shadow: 0px 5px 20px #000;
+}
+.menu{
+
+    list-style: none;
+    display: flex;
+}
+
+/* Estilo dos links no menu */
+.menu li a {
+    color: #ffffff;
+    /* Cor do texto */
+    display: block;
+    /* Transforma em bloco para ocupar largura total */
+    text-decoration: none;
+    /* Remove sublinhado */
+    margin-left: 10px;
+    /* Espaçamento à esquerda */
+    padding: 10px 20px;
+    /* Espaçamento interno nos links */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+.menu li a:hover { 
+    background-color: #333;
+    /* Cor de fundo ao passar o mouse */
+    color: #fff;
+    /* Cor do texto ao passar o mouse */
+    transition: background-color 0.
+}
+.logoMarca {
+    color: #ffffff;
+    /* Cor do texto */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+/* Estilização do conteúdo principal */
+main {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Estilização da seção de imagens */
+section {
+    max-width: 1024px;
+    /* Largura máxima da seção */
+    margin: 0 auto;
+    /* Centraliza a seção */
+    display: flex;
+    /* Flexbox para disposição das imagens */
+    flex-wrap: wrap;
+    /* Permite quebra de linha para as imagens */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+}
+
+/* Estilo para as imagens na seção */
+section img {
+    width: 100%;
+    /* Largura da imagem ocupa 100% do contêiner */
+    height: 200px;
+    /* Altura fixa para uniformidade */
+    object-fit: cover;
+    /* Preenche o espaço sem distorção */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Estilização dos contêineres das imagens */
+section div {
+    flex: 1 1 250px;
+    /* Flex-grow, flex-shrink e tamanho base */
+    min-width: 200px;
+    /* Largura mínima */
+    max-width: 300px;
+    /* Largura máxima */
+    margin: 10px;
+    /* Margem ao redor do contêiner */
+    background-color: #252525;
+    /* Cor de fundo */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Esconde conteúdo que ultrapassa o limite */
+    display: flex;
+    /* Flexbox para alinhar imagem no centro */
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Alinha horizontalmente */
+}
+
+footer {
+    width: 100%;
+    /* Ocupa toda a largura da tela */
+    height: 70px;
+    /* Altura fixa para o rodapé */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #101010;
+    /* Cor de fundo */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite que itens "quebrem" para novas linhas */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+}
+/* Estilo dos links no rodapé */
+.rodape {
+    list-style: none;
+    display: flex;
+}
+
+.rodape li a{
+    color: #ffffff;
+    /* Cor do texto */
+    display: block;
+    /* Transforma em bloco para ocupar largura total */
+    text-decoration: none;
+    /* Remove sublinhado */
+    margin-left: 10px;
+    /* Espaçamento à esquerda */
+    padding: 10px 20px;
+    /* Espaçamento interno nos links */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+.rodape li a:hover { 
+    background-color: #333;
+    /* Cor de fundo ao passar o mouse */
+    color: #fff;
+    /* Cor do texto ao passar o mouse */
+    transition: background-color 0.3s ease;
+    /* Transição suave para a cor de fundo */
+}
+footer p {
+    color: #ffffff;
+}
