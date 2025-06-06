@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Corpo com gradiente azul e centralização dos elementos */
+body {
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container geral que usa Flexbox para as duas seções lado a lado */
+.container {
+  display: flex;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 90%;
+}
+
+/* Seção de boas-vindas com gradiente e bolhas */
+.welcome {
+  flex: 1; /* ocupa metade do espaço */
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  color: #fff;
+  padding: 2rem;
+  position: relative; /* para as bolhas posicionadas absolutamente */
+}
+
+/* Bolha menor */
+.welcome::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 20%;
+  left: -50px;
+}
+
+/* Bolha maior */
+.welcome::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Títulos e parágrafo na seção de boas-vindas */
+.welcome h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Seção do formulário de login */
+.login-box {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Título do formulário */
+.login-box h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Agrupamento de inputs */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Estilo dos inputs */
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Opções adicionais: checkbox e link de senha */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.options a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Botão principal de login */
+button[type="submit"] {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Divisor de texto "or" */
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #888;
+}
+
+/* Botão alternativo (sign in with other) */
+.other-signin {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #007BFF;
+  background: transparent;
+  color: #007BFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.other-signin:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+/* Texto de cadastro ao final */
+.signup-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Responsividade: em telas menores, as seções ficam empilhadas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .welcome {
+    order: 1;
+    text-align: center;
+  }
+}
