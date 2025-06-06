@@ -1,0 +1,257 @@
+/* Seleciona todos os elementos HTML */
+* {
+  /* Remove as margens padrão dos navegadores */
+  margin: 0;
+
+  /* Remove o preenchimento padrão (padding) */
+  padding: 0;
+
+  /* Altera o modelo de caixa para incluir 
+   borda e preenchimento na largura/altura */
+  box-sizing: border-box;
+}
+/* Estiliza o elemento <body> da página */
+body {
+  /* Usa o modelo Flexbox para organizar os 
+  elementos filhos */
+  display: flex;
+
+  /* Define a direção principal dos itens do 
+  flex container como coluna (vertical) */
+  flex-direction: column;
+
+  /* Centraliza os itens ao longo do eixo
+   transversal (horizontal, nesse caso) */
+  align-items: center;
+
+  /* Remove as margens padrão do navegador 
+  no <body> */
+  margin: 0;
+}
+/* Estiliza o elemento <header> */
+header {
+  /* Define a cor de fundo do cabeçalho */
+  background-color: #02b7df;
+
+  /* Faz o cabeçalho ocupar toda a largura 
+  da tela */
+  width: 100%;
+
+  /* Usa o modelo Flexbox para organizar os 
+  elementos filhos */
+  display: flex;
+
+  /* Centraliza os itens horizontalmente 
+  (ao longo do eixo principal) */
+  justify-content: center;
+
+  /* Esse comando não tem efeito em flex 
+  container, pois é usado em grid layout */
+  justify-items: center;
+
+  /* Adiciona espaçamento interno ao redor 
+  do conteúdo do cabeçalho */
+  padding: 20px;
+}
+
+/* Estiliza o elemento <nav> */
+nav {
+  /* Define a cor de fundo da barra de 
+  navegação */
+  background-color: #b3b3b3;
+
+  /* Faz o <nav> ocupar toda a largura da 
+  tela */
+  width: 100%;
+
+  /* Usa o modelo Flexbox para organizar 
+  os itens filhos */
+  display: flex;
+
+  /* Centraliza os itens filhos no eixo 
+  principal (horizontal) */
+  justify-content: center;
+
+  /* Esse comando não tem efeito em flex 
+  containers */
+  justify-items: center;
+
+  /* Adiciona espaçamento interno ao 
+  redor dos itens de navegação */
+  padding: 20px;
+}
+
+/* Estiliza o elemento <main> */
+main {
+  /* Usa o modelo Flexbox para organizar 
+  os elementos filhos */
+  display: flex;
+
+  /* Faz o <main> ocupar toda a 
+  largura disponível */
+  width: 100%;
+
+  /* Distribui o espaço restante entre 
+  os itens filhos (com espaçamento igual) */
+  justify-content: space-between;
+
+  /* Faz os itens filhos esticarem-se 
+  para preencher a altura do container */
+  align-items: stretch;
+
+  /* Remove qualquer espaçamento interno 
+  (padding) */
+  padding: 0;
+
+  /* Define a altura fixa do <main> */
+  height: 300px;
+}
+
+/* Estiliza o elemento <aside> */
+aside {
+  /* Permite que o <aside> ocupe o mesmo 
+  espaço flexível que outros elementos no 
+  mesmo container (proporção igual) */
+  flex: 1;
+
+  /* Define a cor de fundo do <aside> */
+  background-color: #fbf96e;
+
+  /* Faz o <aside> ocupar toda a largura 
+  disponível dentro do seu container flex */
+  width: 100%;
+
+  /* Usa o modelo Flexbox para organizar o
+   conteúdo do <aside> */
+  display: flex;
+
+  /* Centraliza os itens horizontalmente */
+  justify-content: center;
+
+  /* Centraliza os itens verticalmente */
+  align-items: center;
+
+  /* Adiciona espaçamento interno ao redor do conteúdo */
+  padding: 20px;
+
+  /* Define uma altura fixa para o <aside> */
+  height: 300px;
+}
+
+/* Estiliza o elemento com a classe .conteudo */
+.conteudo {
+  /* O elemento ocupa o dobro de espaço (proporção 2:1) 
+  em relação a um elemento com flex: 1 */
+  flex: 2;
+
+  /* Define a cor de fundo */
+  background-color: #ec62e7;
+
+  /* Faz o elemento ocupar toda a largura disponível */
+  width: 100%;
+
+  /* Usa Flexbox para organizar o conteúdo interno */
+  display: flex;
+
+  /* Centraliza horizontalmente os elementos filhos */
+  justify-content: center;
+
+  /* Centraliza verticalmente os elementos filhos */
+  align-items: center;
+
+  /* Adiciona espaçamento interno ao redor do conteúdo */
+  padding: 20px;
+
+  /* Define uma altura fixa para o elemento */
+  height: 300px;
+}
+
+
+/* Estiliza o elemento <footer> */
+footer {
+  /* Define a cor de fundo do rodapé */
+  background-color: #73fb6e;
+
+  /* Faz o rodapé ocupar toda a largura da página */
+  width: 100%;
+
+  /* Usa Flexbox para organizar os elementos filhos */
+  display: flex;
+
+  /* Distribui o espaço entre os itens filhos de forma uniforme (com espaço ao redor de cada item) */
+  justify-content: space-around;
+
+  /* Centraliza verticalmente os itens filhos no rodapé */
+  align-items: center;
+
+  /* Adiciona espaçamento interno ao redor do conteúdo */
+  padding: 20px;
+}
+
+/* Estiliza os elementos <div> que estão dentro do <footer> */
+footer div {
+  /* Cada <div> ocupa o mesmo espaço dentro do rodapé, proporcionalmente */
+  flex: 1;
+
+  /* Usa Flexbox para organizar o conteúdo interno das <div> */
+  display: flex;
+
+  /* Centraliza horizontalmente o conteúdo das <div> */
+  justify-content: center;
+
+  /* Centraliza verticalmente o conteúdo das <div> */
+  align-items: center;
+
+  /* Adiciona um espaçamento interno ao redor do conteúdo */
+  padding: 10px;
+
+  /* Define um fundo semi-transparente (leve transparência com cor branca) */
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Regras aplicadas para telas com largura máxima de 992px (ex.: tablets e dispositivos menores) */
+@media (max-width: 992px) {
+
+  /* O <main> muda para empilhar os elementos verticalmente (em vez de lado a lado) */
+  main {
+    flex-direction: column;
+  }
+
+  /* O <aside> passa a aparecer depois do conteúdo principal (ordem 3) e ocupa toda a largura */
+  aside {
+    order: 3;
+    width: 100%;
+  }
+
+  /* O elemento com a classe .conteudo ocupa toda a largura */
+  .conteudo {
+    width: 100%;
+  }
+
+  /* O rodapé permite que seus itens quebrem para a próxima linha quando necessário */
+  footer {
+    flex-wrap: wrap;
+  }
+
+  /* Os elementos com IDs parte1 e parte2 ocupam 50% da largura, adaptando o layout */
+  #parte1, #parte2 {
+    flex: 1 1 50%;
+  }
+
+  /* O elemento com ID parte3 ocupa 100% da largura, ficando abaixo dos demais */
+  #parte3 {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+footer {
+    -ms-flex-direction: column;
+  }
+
+  /* Os elementos com IDs parte1 e parte2 ocupam 50% da largura, adaptando o layout */
+  #parte1, #parte2m #parte3 {
+    flex: 1 1 100%;
+  }
+}
+
