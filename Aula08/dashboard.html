@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1976d2;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .dashboard {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 30px 40px;
+            min-width: 180px;
+            text-align: center;
+        }
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            color: #1976d2;
+        }
+        .card p {
+            margin: 0;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #e3e3e3;
+            color: #555;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Simples</h1>
+    </header>
+    <div class="dashboard">
+        <div class="card">
+            <h2>120</h2>
+            <p>Usuários</p>
+        </div>
+        <div class="card">
+            <h2>35</h2>
+            <p>Projetos</p>
+        </div>
+        <div class="card">
+            <h2>8</h2>
+            <p>Alertas</p>
+        </div>
+    </div>
+    <footer>
+        <a href="index.html">Novo Login</a>
+        &copy; 2024 Dashboard Exemplo
+    </footer>
+</body>
+</html>
