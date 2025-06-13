@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro</h1>
+        <form id="formulario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+           <div>
+                <label for="senhaConfirmacao">Confirmação de Senha:</label>
+                <input type="password" id="senhaConfirmacao" name="senhaConfirmacao">
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <p id="mensagem" class="mensagem"></p>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
