@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulário Responsivo • Flex + Media Queries</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+      <!-- Ctrl + Click do mouse - Link do CSS -->
+</head>
+<body>
+    <header class="site-header">
+    <h1 class="brand">Inscrição • Workshop Frontend</h1>
+  </header>
+   <main class="wrap">
+        <section class="card">
+             <h2 class="title">Dados do participante</h2>
+      <p class="subtitle">Exemplo minimalista de formulário responsivo (Flex + Media Queries) com validação nativa.</p>
+             <form class="form" action="#" method="post" novalidate>
+                <!-- Linha 1 -->
+                <div class="row">
+                     <div class="col">
+                            <label class="label" for="nome">Nome completo</label>
+                            <input class="input" type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" autocomplete="name">
+                     </div>
+                    <div class="col">
+                            <label class="label" for="email">E-mail</label>
+                            <input class="input" type="email" id="email" name="email" required placeholder="Digite seu e-mail" autocomplete="email">
+                     </div>
+                </div>
+                <!-- Linha 2 -->
+                <div class="row">
+                     <div class="col"> 
+                            <label for="tel">Telefone</label>
+                            <input id="tel" name="tel" type="tel" placeholder="(62) 99999-0000" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" />
+                            <small class="hint">Formato: (DD) 99999-9999</small>
+                     </div>
+                     <div class="col">
+                        <label for="area">Área de interesse</label>
+                        <select id="area" name="area">
+                            <option value="">Selecione…</option>
+                            <option>Frontend</option>
+                            <option>Backend</option>
+                            <option>UI/UX</option>
+                            <option>Dados</option>
+                            <option>Mobile</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Linha 3 -->
+                <div class="row">
+                    <div class="col">
+                        <label for="data">Data preferida</label>
+                        <input id="data" name="data" type="date" />
+                    </div>
+                    <div class="col">
+                        <label for="nivel">Nível (0–10)</label>
+                        <input id="nivel" name="nivel" type="range" min="0" max="10" step="1" />
+                    </div>
+                </div>
+
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" name="msg" rows="4" maxlength="300" placeholder="Conte rapidamente suas expectativas (até 300 caracteres)"></textarea>
+
+                <label class="check">
+                <input type="checkbox" name="termos" required>
+                <span>Aceito receber materiais e comunicações do evento</span>
+                </label>
+                
+                <div class="actions">
+                    <button class="btn ghost" type="reset">Limpar</button>
+                    <button class="btn" type="submit">Enviar inscrição</button>
+                </div>
+             </form>
+        </section>
+   </main>
+   <footer class="site-footer">
+        <small>© 2025 • Exemplo didático • Flexbox + Media Queries + HTML5 Forms</small>
+  </footer>
+</body>
+</html>
