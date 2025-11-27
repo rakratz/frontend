@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Recursivo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <!-- Painel da esquerda: “propaganda” / texto -->
+      <div class="login-side">
+        <h1>Bem-vindo de volta!</h1>
+        <p>
+          Faça login para acessar seu painel de controle, 
+          acompanhar seus projetos e ver estatísticas em tempo real.
+        </p>
+        <ul>
+          <li>📊 Relatórios inteligentes</li>
+          <li>🔐 Segurança em múltiplos níveis</li>
+          <li>⚙️ Configurações personalizadas</li>
+        </ul>
+      </div>
+
+      <!-- Painel da direita: formulário -->
+      <div class="login-form">
+        <h2>Entrar na conta</h2>
+        <p class="subtitle">Use seu e-mail institucional e senha.</p>
+
+        <form id="form-login" novalidate>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="seu.email@dominio.com"
+            />
+            <small class="error" id="error-email"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Sua senha segura"
+            />
+            <small class="error" id="error-password"></small>
+
+            <div class="password-hints">
+              <span>Mín. 8 caracteres</span>
+              <span>Letra maiúscula</span>
+              <span>Número</span>
+            </div>
+          </div>
+
+          <div class="form-extra">
+            <label class="remember-me">
+              <input type="checkbox" id="remember" />
+              Lembrar de mim
+            </label>
+            <a href="#" class="forgot-link">Esqueci minha senha</a>
+          </div>
+
+          <button type="submit" class="btn-login">
+            Entrar
+          </button>
+
+          <p class="register-text">
+            Não tem conta? <a href="#">Criar conta</a>
+          </p>
+
+          <div id="result-message"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="css/script.js"></script>
+</body>
+</html>
