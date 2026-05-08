@@ -1,0 +1,44 @@
+/* Rest CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Estilo do Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+/* Estilo do H1 */
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+/* Estilo do Parágrafo */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #666;
+}
+/* Estilo do Navegação */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: coral;
+}

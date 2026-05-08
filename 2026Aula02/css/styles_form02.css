@@ -1,0 +1,125 @@
+/* RESET BÁSICO */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORPO DA PÁGINA */
+body{
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* CAIXA DO LOGIN */
+.login-container{
+  width:350px;
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+.login-container h1{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  color:#333;
+}
+
+/* GRUPO DOS INPUTS */
+.input-group{
+  margin-bottom:20px;
+}
+
+/* LABEL */
+.input-group label{
+  display:block;
+
+  margin-bottom:8px;
+
+  color:#555;
+
+  font-weight:bold;
+}
+
+/* INPUT */
+.input-group input{
+  width:100%;
+
+  padding:12px;
+
+  border:1px solid #ccc;
+
+  border-radius:10px;
+
+  outline:none;
+
+  transition:0.3s;
+}
+
+/* EFEITO AO CLICAR */
+.input-group input:focus{
+  border-color:#7c3aed;
+
+  box-shadow:0 0 8px rgba(124,58,237,0.3);
+}
+
+/* BOTÃO */
+button{
+  width:100%;
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#7c3aed;
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* HOVER */
+button:hover{
+  background:#5b21b6;
+}
+
+/* TEXTO EXTRA */
+.extra-text{
+  margin-top:20px;
+
+  text-align:center;
+
+  color:#666;
+
+  font-size:14px;
+}
+
+.extra-text a{
+  color:#7c3aed;
+
+  text-decoration:none;
+
+  font-weight:bold;
+}
