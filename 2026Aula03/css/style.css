@@ -1,0 +1,137 @@
+/* =================================
+    Aula 03 - Web Semântica + CSS
+    Professor: Ricardo Kratz
+    Revisão de CSS + FLEXBOX
+================================= */
+
+/* Reset básico */
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+}
+
+/* =================================
+    CABEÇALHO
+================================= */
+
+header {
+
+    background-color: #1e293b;
+
+    color: #fff;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* Espaço do título */
+header h1 {
+
+    margin-bottom: 15px;
+}
+
+/* =================================
+    MENU COM FLEXBOX
+================================= */
+
+nav ul {
+
+    /* Remove os pontos */
+    list-style: none;
+
+    /* FLEXBOX */
+    display: flex;
+
+    /* Centraliza */
+    justify-content: center;
+
+    /* Espaçamento */
+    gap: 20px;
+}
+
+/* Links do menu */
+nav a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+nav a:hover {
+
+    color: lightblue;
+}
+
+/* =================================
+    ÁREA PRINCIPAL
+================================= */
+
+main {
+
+    width: 80%;
+
+    margin: 20px auto;
+}
+
+/* =================================
+    CAIXAS DE CONTEÚDO
+================================= */
+
+section,
+article,
+aside {
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    /* sombra */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2,
+h3 {
+
+    margin-bottom: 10px;
+}
+
+/* =================================
+    RODAPÉ
+================================= */
+
+footer {
+
+    background-color: #1e293b;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
