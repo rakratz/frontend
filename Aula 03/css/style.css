@@ -6,184 +6,139 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: #1a1a1a;
+    width: 100%;    /* Ocupa toda a largura disponível.*/
+    height: 100vh; /* Define a altura como a altura da janela. */
+    background-color: #1a1a1a; /* Aplica o fundo cinza-escuro à página. */
 }
-/* Estilização do cabeçalho */
+
+/* CABEÇALHO */
 header {
     width: 100%;
-    /* Ocupa toda a largura da tela */
-    height: 70px;
-    /* Altura fixa para o cabeçalho */
-    padding: 10px;
-    /* Espaçamento interno */
+    height: 70px;                       /* Define uma altura fixa de 70 pixels. */
+    padding: 10px;                      /* Afasta o conteúdo das bordas do cabeçalho. */
     background-color: #101010;
-    /* Cor de fundo */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    justify-content: space-between;
-    /* Espaça itens entre as extremidades */
-    display: flex;
-    /* Usa flexbox para layout */
-    flex-wrap: wrap;
-    /* Permite que itens "quebrem" para novas linhas */
+
+    display: flex;                      /* Coloca a marca e o nav lado a lado. */
+    align-items: center;                /* Centraliza os itens na vertical. */
+    justify-content: space-between;     /* Distribui o espaço livre entre a marca e o menu. */
+    flex-wrap: wrap;                    /* Permite que um item passe para outra linha. */
 }
+
 ul {
-    list-style: none;
-    /* Remove os marcadores da lista */
-    display: flex;
-    /* Usa flexbox para layout */
-    flex-wrap: wrap;
-    /* Permite que itens "quebrem" para novas linhas */
-    gap: 20px;
-    /* Espaçamento entre os itens da lista */
-    box-shadow: 0px 5px 20px #000;
+    list-style: none;                   /* Remove os marcadores da lista */
+    display: flex;                      /* Usa flexbox para layout */
+    flex-wrap: wrap;                    /* Permite quebrar a linha quando faltar espaço. */
+    gap: 20px;                          /* Deixa 20 pixels entre os itens da lista. */
+    box-shadow: 0px 5px 20px #000;    /* Sombra preta com 0 de deslocamento horizontal, 5 pixels para baixo e 20 pixels de desfoque. */
 }
-.menu{
 
+.menu {
     list-style: none;
     display: flex;
 }
 
-/* Estilo dos links no menu */
+/* Seleciona os links <a> dentro dos itens <li> da lista .menu. */
 .menu li a {
-    color: #ffffff;
-    /* Cor do texto */
-    display: block;
-    /* Transforma em bloco para ocupar largura total */
-    text-decoration: none;
-    /* Remove sublinhado */
-    margin-left: 10px;
-    /* Espaçamento à esquerda */
-    padding: 10px 20px;
-    /* Espaçamento interno nos links */
-    border-radius: 8px;
-    /* Bordas arredondadas */
+    color: #ffffff;         /* Define o texto do link como branco. */
+    display: block;           /* Faz o link se comportar como bloco dentro do li. */
+    text-decoration: none;    /* Retira o sublinhado do link. */
+    margin-left: 10px;        /* Cria espaço externo à esquerda. */
+    padding: 10px 20px;       /* 10 px em cima e embaixo, 20 px nas laterais. */
+    border-radius: 8px;         /* Arredonda os cantos da área do link. */
+
+    transition: background-color 0.3s ease;  /* A cor de fundo muda suavemente ao entrar e sair com o mouse. */
 }
 
-.menu li a:hover { 
+.menu li a:hover {
     background-color: #333;
-    /* Cor de fundo ao passar o mouse */
-    color: #fff;
-    /* Cor do texto ao passar o mouse */
-    transition: background-color 0.
+    color: #fff;      /* #fff é uma forma curta de escrever #ffffff. */
 }
+
 .logoMarca {
     color: #ffffff;
-    /* Cor do texto */
-    font-size: 24px;
-    /* Tamanho da fonte */
-    font-weight: bold;
-    /* Negrito */
-    text-decoration: none;
-    /* Remove sublinhado */
+    font-size: 24px;    /* Define o tamanho das letras da marca. */
+    font-weight: bold;  /* Coloca o texto em negrito. */
+    text-decoration: none;  /* Retira decorações como sublinhado. */
 }
 
-/* Estilização do conteúdo principal */
+/* main */
 main {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 10px;
-}
-/* Estilização da seção de imagens */
-section {
-    max-width: 1024px;
-    /* Largura máxima da seção */
-    margin: 0 auto;
-    /* Centraliza a seção */
-    display: flex;
-    /* Flexbox para disposição das imagens */
-    flex-wrap: wrap;
-    /* Permite quebra de linha para as imagens */
-    justify-content: center;
-    /* Centraliza os itens horizontalmente */
-    gap: 20px;
-    /* Espaçamento entre os itens */
+    color: #ffffff;       /* Define a cor do texto dentro de main. */
+    text-align: center;     /* Centraliza textos como o título Produtos. */
+    margin-top: 10px;       /* Cria espaço acima do conteúdo principal. */
 }
 
-/* Estilo para as imagens na seção */
+/* GALERIA */
+section { 
+    max-width: 1024px;  /* Limita a largura da galeria. */
+    margin: 0 auto;     /* Centraliza a seção com margens laterais iguais. */
+    display: flex;      /* Organiza os cartões lado a lado. */
+    flex-wrap: wrap;    /* Passa cartões para outra linha se necessário. */
+    justify-content: center;     /* Centraliza os cartões em cada linha. */
+    gap: 20px;          /* Cria espaço entre os cartões. */
+}
+
 section img {
-    width: 100%;
-    /* Largura da imagem ocupa 100% do contêiner */
-    height: 200px;
-    /* Altura fixa para uniformidade */
-    object-fit: cover;
-    /* Preenche o espaço sem distorção */
-    border-radius: 8px;
-    /* Bordas arredondadas */
+    width: 100%; /* A imagem acompanha a largura do cartão. */
+    height: 200px; /* Todas as imagens ficam com a mesma altura. */
+    object-fit: cover;  /* Preenche a área mantendo a proporção.
+                        Partes da foto podem ser cortadas. */
+    border-radius: 8px; /* Arredonda os cantos da imagem. */
 }
 
-/* Estilização dos contêineres das imagens */
 section div {
     flex: 1 1 250px;
-    /* Flex-grow, flex-shrink e tamanho base */
-    min-width: 200px;
-    /* Largura mínima */
-    max-width: 300px;
-    /* Largura máxima */
-    margin: 10px;
-    /* Margem ao redor do contêiner */
+    /* Primeiro 1: permite que o cartão cresça quando sobra espaço.
+       Segundo 1: permite que ele encolha quando falta espaço.
+       250px: tamanho inicial usado pelo Flexbox no cálculo da largura. */
+
+    min-width: 200px; /* Limita o quanto o cartão pode encolher. */
+    max-width: 300px; /* Limita o quanto o cartão pode crescer. */
+    margin: 10px;     /* Espaço externo ao redor de cada cartão.
+                         Esse espaço se soma ao gap da section. */
+
     background-color: #252525;
-    /* Cor de fundo */
     border-radius: 8px;
-    /* Bordas arredondadas */
-    overflow: hidden;
-    /* Esconde conteúdo que ultrapassa o limite */
-    display: flex;
-    /* Flexbox para alinhar imagem no centro */
-    align-items: center;
-    /* Alinha verticalmente */
-    justify-content: center;
-    /* Alinha horizontalmente */
+    overflow: hidden;   /* Recorta o que ultrapassar os limites do cartão. */
+    display: flex;      /* Usa Flexbox dentro do cartão para alinhar a foto. */
+    align-items: center; /* Centraliza a foto na vertical. */
+    justify-content: center; /* Centraliza a foto na horizontal. */
 }
 
-footer {
+/* RODAPÉ */
+footer { 
     width: 100%;
-    /* Ocupa toda a largura da tela */
     height: 70px;
-    /* Altura fixa para o rodapé */
     padding: 10px;
-    /* Espaçamento interno */
     background-color: #101010;
-    /* Cor de fundo */
-    display: flex;
-    /* Usa flexbox para layout */
-    flex-wrap: wrap;
-    /* Permite que itens "quebrem" para novas linhas */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    justify-content: center;
-    /* Centraliza os itens horizontalmente */
+
+    display: flex; /* Organiza a lista e o parágrafo lado a lado. */
+    flex-wrap: wrap; /* Permite que o parágrafo passe para outra linha. */
+    align-items: center; /* Centraliza os itens na vertical em cada linha. */
+    justify-content: center; /* Centraliza os itens na horizontal. */
 }
-/* Estilo dos links no rodapé */
+
 .rodape {
     list-style: none;
     display: flex;
 }
 
-.rodape li a{
+.rodape li a {
     color: #ffffff;
-    /* Cor do texto */
-    display: block;
-    /* Transforma em bloco para ocupar largura total */
-    text-decoration: none;
-    /* Remove sublinhado */
-    margin-left: 10px;
-    /* Espaçamento à esquerda */
-    padding: 10px 20px;
-    /* Espaçamento interno nos links */
+    display: block; /* Faz o link se comportar como bloco dentro do li. */
+    text-decoration: none; /* Retira o sublinhado do link. */
+    margin-left: 10px; /* Espaço do lado de fora do link. */
+    padding: 10px 20px; /* Espaço interno que amplia a área clicável. */
     border-radius: 8px;
-    /* Bordas arredondadas */
 }
-.rodape li a:hover { 
-    background-color: #333;
-    /* Cor de fundo ao passar o mouse */
-    color: #fff;
-    /* Cor do texto ao passar o mouse */
-    transition: background-color 0.3s ease;
-    /* Transição suave para a cor de fundo */
-}
-footer p {
-    color: #ffffff;
-}
+
+    .rodape li a:hover {
+        background-color: #333;
+        color: #fff;
+        transition: background-color 0.3s ease;
+            /* A cor de fundo muda suavemente ao entrar e sair com o mouse. */
+    }
+
+    footer p {
+        color: #ffffff;
+    }
