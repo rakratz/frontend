@@ -1,0 +1,41 @@
+/* O que é Flexbox */
+/* Flexbox é um recurso do CSS para organizar elementos em uma linha ou em uma coluna. Com ele, você pode alinhar os elementos, controlar o espaço entre eles e permitir que passem para a próxima linha quando faltar espaço.*/
+
+/* Configurações Iniciais*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e2e2;
+    padding: 20px; /* Afasta o conteúdo das bordas da janela. */
+}
+
+.container {
+    padding: 12px;  /* Cria espaço dentro do contêiner. */
+    border: 2px solid #334155; /* Mostra os limites do elemento pai. */
+
+    /* Testes com Flexbox */
+    /* Colocar os itens lado a lado */
+    display: flex;
+    height: 180px;
+    /*flex-direction: column; */  /* Organiza as caixas de cima para baixo. */
+    justify-content: space-between; /* Distribui o espaço livre entre as caixas. */
+    flex-wrap: wrap;  /* Permite que as caixas passem para a próxima linha. */
+
+    align-items: center;
+
+
+    gap: 8px; /* Deixa 8 pixels de espaço entre as caixas. */
+
+}
+
+.item {
+    box-sizing: border-box;
+    /* Inclui o padding na largura definida. */
+    width: 100px;
+    /* Define a largura inicial da caixa. */
+    padding: 16px;
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
